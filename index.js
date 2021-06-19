@@ -9,11 +9,11 @@ console.log("Hello World");
 const PORT  = process.env.PORT || 4444;
 
 app.get('/', (req, res) => {
-    response.send("Hello world...");
+    res.send("Hello world...");
 });
 
 app.use((req, res) => {
-    response.status(404).json({
+    res.status(404).json({
         error: "Not found!"
     })
 });
