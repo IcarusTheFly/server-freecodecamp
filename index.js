@@ -1,12 +1,13 @@
 
+const bonsole = require('bonsole');
 const { response } = require('express');
-var express = require('express');
-var app = express();
+const express = require('express');
+const app = express();
 
 const PORT  = process.env.PORT || 4444;
 
 app.get('/', (req, res) => {
-    console.log("Hello World");
+    bonsole("Hello World");
     res.send("Hello world");
 });
 
