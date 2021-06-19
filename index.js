@@ -1,5 +1,4 @@
 
-const bonsole = require('bonsole');
 const { response } = require('express');
 const express = require('express');
 const app = express();
@@ -7,7 +6,6 @@ const app = express();
 const PORT  = process.env.PORT || 4444;
 
 app.get('/', (req, res) => {
-    bonsole("Hello World");
     res.send("Hello world");
 });
 

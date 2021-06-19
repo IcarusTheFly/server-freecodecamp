@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/IcarusTheFly/server-freecodecamp#readme",
   "dependencies": {
-    "bonsole": "^1.0.3",
-    "express": "^4.17.1"
+    "express": "4.17.1"
   }
 }
