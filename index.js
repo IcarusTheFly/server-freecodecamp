@@ -7,7 +7,6 @@ require('dotenv').config();
 const PORT  = process.env.PORT || 4444;
 
 app.get('/', (req, res) => {
-    // res.send("Hello world");
     res.sendFile('index.html', {root: path.join(__dirname)});
 });
 
