@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/demo', (req, res) => {
-    console.log("Origin is: " + req.headers.origin);
+    console.log("Origin is: " + req.remoteAddress);
     res.status(200).end("This is just a demo");
 });
 
