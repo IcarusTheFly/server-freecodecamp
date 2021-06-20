@@ -3,6 +3,7 @@ const express = require('express');
 const path = require('path');
 const app = express();
 require('dotenv').config();
+const cors = require('cors');
 
 const PORT  = process.env.PORT || 4444;
 
@@ -21,6 +22,8 @@ app.use((req, res) => {
         error: "Not found!"
     });
 });
+
+app.use(cors());
 
 app.listen(PORT, () => {
     console.log("Connected to the server!");
